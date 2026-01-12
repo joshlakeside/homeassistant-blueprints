@@ -29,7 +29,7 @@ trigger:
     to: "on"
     for:
       hours: 0
-      minutes: 0
+      minutes: 2
       seconds: 30
     id: EV_Charging
     trigger: state
@@ -51,7 +51,7 @@ actions:
         state: "on"
         for:
           hours: 0
-          minutes: 0
+          minutes: 2
           seconds: 30
     then:
       - alias: ensure that charge schedule is enabled.
@@ -116,4 +116,5 @@ actions:
 mode: restart
 trace:
   stored_traces: 80
+
 
